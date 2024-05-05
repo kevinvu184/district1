@@ -54,10 +54,10 @@ devDependencies:
     version: 0.1.62(@swc/core@1.3.85)
   '@swc/core':
     specifier: ~1.3.85
-    version: 1.3.85(@swc/helpers@0.5.2)
+    version: 1.3.85(@swc/helpers@0.5.11)
   '@swc/helpers':
-    specifier: ~0.5.2
-    version: 0.5.2
+    specifier: ~0.5.11
+    version: 0.5.11
   '@testing-library/react':
     specifier: 14.0.0
     version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -2336,7 +2336,7 @@ packages:
       '@nx/devkit': 18.3.4(nx@18.3.4)
       '@nx/js': 18.3.4(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@18.3.4)(typescript@5.4.2)
       '@phenomnomnominal/tsquery': 5.0.1(typescript@5.4.2)
-      '@swc/helpers': 0.5.2
+      '@swc/helpers': 0.5.11
       enquirer: 2.3.6
       tsconfig-paths: 4.2.0
       vite: 5.0.13(@types/node@18.16.9)
@@ -2718,7 +2718,7 @@ packages:
       '@swc/core': '>= 1.4.13'
       '@swc/types': '>= 0.1'
     dependencies:
-      '@swc/core': 1.3.85(@swc/helpers@0.5.2)
+      '@swc/core': 1.3.85(@swc/helpers@0.5.11)
       '@swc/types': 0.1.6
     dev: true
 
@@ -2730,7 +2730,7 @@ packages:
     dependencies:
       '@swc-node/core': 1.13.1(@swc/core@1.3.85)(@swc/types@0.1.6)
       '@swc-node/sourcemap-support': 0.4.0
-      '@swc/core': 1.3.85(@swc/helpers@0.5.2)
+      '@swc/core': 1.3.85(@swc/helpers@0.5.11)
       colorette: 2.0.20
       debug: 4.3.4
       pirates: 4.0.6
@@ -2760,7 +2760,7 @@ packages:
         optional: true
     dependencies:
       '@mole-inc/bin-wrapper': 8.0.1
-      '@swc/core': 1.3.85(@swc/helpers@0.5.2)
+      '@swc/core': 1.3.85(@swc/helpers@0.5.11)
       commander: 7.2.0
       fast-glob: 3.3.2
       semver: 7.6.0
@@ -2858,7 +2858,7 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core@1.3.85(@swc/helpers@0.5.2):
+  /@swc/core@1.3.85(@swc/helpers@0.5.11):
     resolution: {integrity: sha512-qnoxp+2O0GtvRdYnXgR1v8J7iymGGYpx6f6yCK9KxipOZOjrlKILFANYlghQxZyPUfXwK++TFxfSlX4r9wK+kg==}
     engines: {node: '>=10'}
     requiresBuild: true
@@ -2868,7 +2868,7 @@ packages:
       '@swc/helpers':
         optional: true
     dependencies:
-      '@swc/helpers': 0.5.2
+      '@swc/helpers': 0.5.11
       '@swc/types': 0.1.6
     optionalDependencies:
       '@swc/core-darwin-arm64': 1.3.85
@@ -2887,8 +2887,8 @@ packages:
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
     dev: true
 
-  /@swc/helpers@0.5.2:
-    resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
+  /@swc/helpers@0.5.11:
+    resolution: {integrity: sha512-YNlnKRWF2sVojTpIyzwou9XoTNbzbzONwRhOoniEioF1AtaitTvVZblaQRrAzChWQ1bLYyYSWzM18y4WwgzJ+A==}
     dependencies:
       tslib: 2.6.2
     dev: true
@@ -6551,7 +6551,7 @@ packages:
     dependencies:
       '@nrwl/tao': 18.3.4(@swc-node/register@1.8.0)(@swc/core@1.3.85)
       '@swc-node/register': 1.8.0(@swc/core@1.3.85)(@swc/types@0.1.6)(typescript@5.4.2)
-      '@swc/core': 1.3.85(@swc/helpers@0.5.2)
+      '@swc/core': 1.3.85(@swc/helpers@0.5.11)
       '@yarnpkg/lockfile': 1.1.0
       '@yarnpkg/parsers': 3.0.0-rc.46
       '@zkochan/js-yaml': 0.0.6
@@ -7737,7 +7737,7 @@ packages:
         optional: true
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
-      '@swc/core': 1.3.85(@swc/helpers@0.5.2)
+      '@swc/core': 1.3.85(@swc/helpers@0.5.11)
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
@@ -7865,7 +7865,7 @@ packages:
         optional: true
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
-      '@swc/core': 1.3.85(@swc/helpers@0.5.2)
+      '@swc/core': 1.3.85(@swc/helpers@0.5.11)
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
