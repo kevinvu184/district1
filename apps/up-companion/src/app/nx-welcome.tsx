@@ -1,5 +1,5 @@
 export function NxWelcome() {
-  return <h1>{'Hello world!'}</h1>;
+  return <h1>{'Welcome up-companion!'}</h1>;
 }
 
 export default NxWelcome;
