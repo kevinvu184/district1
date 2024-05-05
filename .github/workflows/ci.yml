@@ -49,4 +49,5 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
 
       - run: npx nx-cloud record -- nx format:check
+      - run: npx playwright install --with-deps
       - run: npx nx affected -t lint test build e2e-ci
