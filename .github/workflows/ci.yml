@@ -45,6 +45,9 @@ jobs:
       - run: pnpm install
       - uses: nrwl/nx-set-shas@v4
 
+      - name: Install Playwright Browsers
+        run: pnpx playwright install --with-deps
+
       - run: git branch --track main origin/main
         if: ${{ github.event_name == 'pull_request' }}
 
