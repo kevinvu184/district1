@@ -3,7 +3,7 @@ import NxWelcome from './nx-welcome';
 export function App() {
   return (
     <div>
-      <NxWelcome title="kevinvu184-mono" />
+      <NxWelcome title="up-companion" />
     </div>
   );
 }

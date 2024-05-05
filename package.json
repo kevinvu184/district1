@@ -1,9 +1,4 @@
 {
-  "name": "@kevinvu184-mono/source",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
-  "private": true,
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -49,5 +44,10 @@
     "typescript": "~5.4.2",
     "vite": "~5.0.0",
     "vitest": "^1.3.1"
-  }
+  },
+  "license": "MIT",
+  "name": "@up-companion/source",
+  "private": true,
+  "scripts": {},
+  "version": "0.0.0"
 }
