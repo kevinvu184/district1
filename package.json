@@ -12,7 +12,7 @@
     "@nx/playwright": "18.3.4",
     "@nx/react": "18.3.4",
     "@nx/vite": "18.3.4",
-    "@nx/web": "18.3.4",
+    "@nx/web": "19.0.0",
     "@nx/workspace": "18.3.4",
     "@playwright/test": "^1.36.0",
     "@swc-node/register": "~1.8.0",
