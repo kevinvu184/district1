@@ -4,6 +4,5 @@
   "projectType": "application",
   "sourceRoot": "apps/up-companion-e2e/src",
   "implicitDependencies": ["up-companion"],
-  "// targets": "to see all targets run: nx show project up-companion-e2e --web",
   "targets": {}
 }
