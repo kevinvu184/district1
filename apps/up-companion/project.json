@@ -1,8 +1,8 @@
 {
-  "name": "up-companion",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/up-companion/src",
+  "name": "up-companion",
   "projectType": "application",
+  "sourceRoot": "apps/up-companion/src",
   "tags": [],
   "targets": {}
 }

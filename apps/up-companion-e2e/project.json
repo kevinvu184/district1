@@ -1,8 +1,8 @@
 {
-  "name": "up-companion-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": ["up-companion"],
+  "name": "up-companion-e2e",
   "projectType": "application",
   "sourceRoot": "apps/up-companion-e2e/src",
-  "implicitDependencies": ["up-companion"],
   "targets": {}
 }
