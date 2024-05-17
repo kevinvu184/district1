@@ -11,7 +11,6 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "@district1/d1-aws": ["lib/d1-aws/src/index.ts"],
       "@district1/dynamodb-orm": ["lib/dynamodb-orm/src/index.ts"]
     },
     "rootDir": ".",

@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "module": "commonjs",
     "outDir": "../../dist/out-tsc",
     "types": ["node"]
   },
-  "exclude": ["vite.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"],
+  "exclude": [],
   "extends": "./tsconfig.json",
   "include": ["src/**/*.ts"]
 }

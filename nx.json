@@ -63,6 +63,17 @@
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
+    },
+    "@nx/webpack:webpack": {
+      "options": {
+        "compiler": "tsc",
+        "main": "{projectRoot}/src/main.ts",
+        "outputPath": "dist/{projectRoot}",
+        "target": "node",
+        "tsConfig": "{projectRoot}/tsconfig.app.json",
+        "webpackConfig": "{projectRoot}/webpack.config.js"
+      },
+      "outputs": ["{options.outputPath}"]
     }
   }
 }
