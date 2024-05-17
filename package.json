@@ -4,6 +4,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.577.0",
     "@nx/cypress": "18.3.4",
     "@nx/devkit": "18.3.4",
     "@nx/eslint": "18.3.4",

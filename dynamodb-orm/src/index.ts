@@ -1,1 +1,1 @@
-export * from './lib/dynamodb-orm';
+export * from './lib/update';
