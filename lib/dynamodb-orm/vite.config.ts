@@ -6,7 +6,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../node_modules/.vite/dynamodb-orm',
+  cacheDir: '../../node_modules/.vite/dynamodb-orm',
 
   plugins: [
     nxViteTsPaths(),
@@ -17,7 +17,7 @@ export default defineConfig({
   ],
 
   build: {
-    outDir: '../dist/dynamodb-orm',
+    outDir: '../../dist/dynamodb-orm',
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,
@@ -36,14 +36,14 @@ export default defineConfig({
   test: {
     globals: true,
     cache: {
-      dir: '../node_modules/.vitest',
+      dir: '../../node_modules/.vitest',
     },
     environment: 'node',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
 
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../coverage/dynamodb-orm',
+      reportsDirectory: '../../coverage/dynamodb-orm',
       provider: 'v8',
     },
   },
