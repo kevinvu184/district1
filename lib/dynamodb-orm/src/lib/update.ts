@@ -74,9 +74,29 @@ type UpdateItemInput = {
 };
 
 export const update = (): UpdateItemInput => {
-  const empty = {
-    Key: undefined,
-    TableName: undefined,
+  return {
+    ExpressionAttributeNames: {
+      '#AT': 'AlbumTitle',
+      '#Y': 'Year',
+    },
+    ExpressionAttributeValues: {
+      ':t': {
+        S: 'Louder Than Ever',
+      },
+      ':y': {
+        N: '2015',
+      },
+    },
+    Key: {
+      Artist: {
+        S: 'Acme Band',
+      },
+      SongTitle: {
+        S: 'Happy Day',
+      },
+    },
+    ReturnValues: 'ALL_NEW',
+    TableName: 'Music',
+    UpdateExpression: 'SET #Y = :y, #AT = :t',
   };
-  return empty;
 };
