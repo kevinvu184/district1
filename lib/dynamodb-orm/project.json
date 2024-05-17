@@ -1,12 +1,12 @@
 {
-  "name": "dynamodb-orm",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "dynamodb-orm",
   "projectType": "library",
   "sourceRoot": "lib/dynamodb-orm/src",
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@nx/vite:build",
+      "executor": "@nx/js:tsc",
       "options": {
         "assets": ["lib/dynamodb-orm/*.md"],
         "main": "lib/dynamodb-orm/src/index.ts",
