@@ -1,19 +1,19 @@
 {
-  "name": "dynamodb-orm",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "dynamodb-orm/src",
+  "name": "dynamodb-orm",
   "projectType": "library",
+  "sourceRoot": "dynamodb-orm/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/dynamodb-orm",
+        "assets": ["dynamodb-orm/*.md"],
         "main": "dynamodb-orm/src/index.ts",
-        "tsConfig": "dynamodb-orm/tsconfig.lib.json",
-        "assets": ["dynamodb-orm/*.md"]
-      }
+        "outputPath": "dist/dynamodb-orm",
+        "tsConfig": "dynamodb-orm/tsconfig.lib.json"
+      },
+      "outputs": ["{options.outputPath}"]
     }
   }
 }
