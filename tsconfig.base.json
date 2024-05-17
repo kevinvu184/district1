@@ -6,11 +6,12 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "importHelpers": true,
     "lib": ["ESNext", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
-    "paths": {},
+    "paths": {
+      "@district1/dynamodb-orm": ["dynamodb-orm/src/index.ts"]
+    },
     "rootDir": ".",
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,

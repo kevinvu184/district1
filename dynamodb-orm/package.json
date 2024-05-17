@@ -1,0 +1,9 @@
+{
+  "dependencies": {},
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "name": "@district1/dynamodb-orm",
+  "private": true,
+  "typings": "./index.d.ts",
+  "version": "0.0.1"
+}
