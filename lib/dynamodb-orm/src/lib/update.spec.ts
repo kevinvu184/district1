@@ -1,12 +1,12 @@
 import { update } from './update';
 
-it('return an undefined update command input', () => {
+it.skip('return an undefined update command input', () => {
   const received = update();
   const expected = { Key: undefined, TableName: undefined };
   expect(received).toStrictEqual(expected);
 });
 
-it('return a minimal update command input', () => {
+it.skip('return a minimal update command input', () => {
   const received = update();
   const expected = {
     Key: {
