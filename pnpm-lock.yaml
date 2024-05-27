@@ -42,7 +42,7 @@ devDependencies:
     version: 19.0.4(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@19.0.4)(typescript@5.4.2)
   '@nx/playwright':
     specifier: 18.3.4
-    version: 18.3.4(@playwright/test@1.36.0)(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@19.0.4)(typescript@5.4.2)
+    version: 18.3.4(@playwright/test@1.44.1)(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@19.0.4)(typescript@5.4.2)
   '@nx/react':
     specifier: 18.3.4
     version: 18.3.4(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@19.0.4)(typescript@5.4.2)(webpack@5.91.0)
@@ -59,8 +59,8 @@ devDependencies:
     specifier: 18.3.4
     version: 18.3.4(@swc-node/register@1.8.0)(@swc/core@1.3.85)
   '@playwright/test':
-    specifier: ^1.36.0
-    version: 1.36.0
+    specifier: ^1.44.1
+    version: 1.44.1
   '@swc-node/register':
     specifier: ~1.8.0
     version: 1.8.0(@swc/core@1.3.85)(@swc/types@0.1.6)(typescript@5.4.2)
@@ -2488,14 +2488,6 @@ packages:
       - verdaccio
     dev: true
 
-  /@nrwl/devkit@18.3.4(nx@18.3.4):
-    resolution: {integrity: sha512-Fty9Huqm12OYueU3uLJl3uvBUl5BvEyPfvw8+rLiNx9iftdEattM8C+268eAbIRRSLSOVXlWsJH4brlc6QZYYw==}
-    dependencies:
-      '@nx/devkit': 18.3.4(nx@18.3.4)
-    transitivePeerDependencies:
-      - nx
-    dev: true
-
   /@nrwl/devkit@18.3.4(nx@19.0.4):
     resolution: {integrity: sha512-Fty9Huqm12OYueU3uLJl3uvBUl5BvEyPfvw8+rLiNx9iftdEattM8C+268eAbIRRSLSOVXlWsJH4brlc6QZYYw==}
     dependencies:
@@ -2797,7 +2789,7 @@ packages:
     peerDependencies:
       nx: '>= 16 <= 19'
     dependencies:
-      '@nrwl/devkit': 18.3.4(nx@18.3.4)
+      '@nrwl/devkit': 18.3.4(nx@19.0.4)
       ejs: 3.1.10
       enquirer: 2.3.6
       ignore: 5.3.1
@@ -3371,7 +3363,7 @@ packages:
     dev: true
     optional: true
 
-  /@nx/playwright@18.3.4(@playwright/test@1.36.0)(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@19.0.4)(typescript@5.4.2):
+  /@nx/playwright@18.3.4(@playwright/test@1.44.1)(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@19.0.4)(typescript@5.4.2):
     resolution: {integrity: sha512-M6IjSwUkzOKRvaMYfHJVrItBVJ22ojB3oCovzo0J7qx2o0za62o+lo3cbwfmtEqMlgvl0EX8cptlvDTQJFJopQ==}
     peerDependencies:
       '@playwright/test': ^1.36.0
@@ -3383,7 +3375,7 @@ packages:
       '@nx/eslint': 18.3.4(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@19.0.4)
       '@nx/js': 18.3.4(@swc-node/register@1.8.0)(@swc/core@1.3.85)(@types/node@18.16.9)(nx@19.0.4)(typescript@5.4.2)
       '@phenomnomnominal/tsquery': 5.0.1(typescript@5.4.2)
-      '@playwright/test': 1.36.0
+      '@playwright/test': 1.44.1
       minimatch: 9.0.3
       tslib: 2.6.2
     transitivePeerDependencies:
@@ -3636,15 +3628,12 @@ packages:
     dev: true
     optional: true
 
-  /@playwright/test@1.36.0:
-    resolution: {integrity: sha512-yN+fvMYtiyLFDCQos+lWzoX4XW3DNuaxjBu68G0lkgLgC6BP+m/iTxJQoSicz/x2G5EsrqlZTqTIP9sTgLQerg==}
+  /@playwright/test@1.44.1:
+    resolution: {integrity: sha512-1hZ4TNvD5z9VuhNJ/walIjvMVvYkZKf71axoF/uiAqpntQJXpG64dlXhoDXE3OczPuTuvjf/M5KWFg5VAVUS3Q==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@types/node': 18.16.9
-      playwright-core: 1.36.0
-    optionalDependencies:
-      fsevents: 2.3.2
+      playwright: 1.44.1
     dev: true
 
   /@polka/url@1.0.0-next.25:
@@ -8870,8 +8859,6 @@ packages:
     peerDependenciesMeta:
       webpack:
         optional: true
-      webpack-sources:
-        optional: true
     dependencies:
       webpack: 5.91.0(@swc/core@1.3.85)
       webpack-sources: 3.2.3
@@ -9885,6 +9872,7 @@ packages:
   /pify@4.0.1:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -9908,10 +9896,20 @@ packages:
       pathe: 1.1.2
     dev: true
 
-  /playwright-core@1.36.0:
-    resolution: {integrity: sha512-7RTr8P6YJPAqB+8j5ATGHqD6LvLLM39sYVNsslh78g8QeLcBs5750c6+msjrHUwwGt+kEbczBj1XB22WMwn+WA==}
+  /playwright-core@1.44.1:
+    resolution: {integrity: sha512-wh0JWtYTrhv1+OSsLPgFzGzt67Y7BE/ZS3jEqgGBlp2ppp1ZDj8c+9IARNW4dwf1poq5MgHreEM2KV/GuR4cFA==}
     engines: {node: '>=16'}
     hasBin: true
+    dev: true
+
+  /playwright@1.44.1:
+    resolution: {integrity: sha512-qr/0UJ5CFAtloI3avF95Y0L1xQo6r3LQArLIg/z/PoGJ6xa+EwzrwO5lpNr/09STxdHuUoP2mvuELJS+hLdtgg==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      playwright-core: 1.44.1
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /portfinder@1.0.32:
@@ -10418,6 +10416,7 @@ packages:
 
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -10818,6 +10817,7 @@ packages:
 
   /sax@1.3.0:
     resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -10883,6 +10883,7 @@ packages:
   /semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
